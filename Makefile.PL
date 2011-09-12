@@ -1,13 +1,8 @@
 use ExtUtils::MakeMaker;
-
-my $module = 'Compare.pm';
-WriteMakefile(NAME         => 'Number::Compare',
-              VERSION_FROM => $module,
-              PREREQ_PM => { 'Test::More'     => 0 });
-
-sub MY::postamble {
-    return <<EOF
-README: $module
-\tpod2text $module > README
-EOF
-}
+WriteMakefile(
+    NAME         => 'Number::Compare',
+    VERSION_FROM => 'lib/Number/Compare.pm',
+    PREREQ_PM => {
+       'Test::More' => 0,
+   },
+);

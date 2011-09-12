@@ -1,5 +1,5 @@
 #!perl -w
-# $Id: Number-Compare.t 846 2002-10-25 15:46:01Z richardc $
+# $Id$
 use strict;
 use Test::More tests => 24;
 
